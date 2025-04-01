@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+ul{
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+.container-fluid{
+    padding-left: 80px;
+}
+.navbar-brand img{
+    width:150px;
+    height: 50px;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+.login{
+    border: 1px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0,0,0, 0.5);
+}
+.mainOne{
+    background-color: #f0f0f0;
+}
+main h1{
+    font-size: 50px;
+}
+.signUpNow{
+    display: flex;
+}
+.stars{
+    padding-left: 30px;
+}
+.btn{
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0,0,0, 0.5);
+}
+.left{
+    animation: slideIn 2s ease-in-out;
+}
+@keyframes slideIn {
+   from {
+       opacity: 0;
+       transform: translateX(-100%);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+
+.skills .fa-solid{
+    color: green;
+    font-size: 15px;
+    border: 1px solid green;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+.right{
+    position: relative;
+    animation: fadeIn 3s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.skills span{
+    background-color: #b2d6ec;
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+}
+.one{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+.two{
+    position: absolute;
+    top: 70px;
+    left: 480px;
+    /* transform: translate(-50%, -50%); */
+}
+.three{
+    position: absolute;
+    top: 190px;
+    right: 20px;
+}
+.four{
+    position: absolute;
+    top: 310px;
+    right: 18px;
+}
+.five{
+    position: absolute;
+    bottom: 140px;
+    right:80px;
+}
+.talents{
+    background-color: crimson;
+    color: white;
+    padding: 1px 20px 1px 20px;
+}
+.left{
+    padding-left: 80px;
+    padding-top: 50px;
+  }
+.secOne{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForContOne{
+    opacity: 1;
+    transform: translateX(0);
+}
+.secimg{
+    padding-left: 120px;
+}
+.secimg img{
+    width: 100%;
+}
+.secOneCont{
+    padding: 60px 200px 100px 30px;
+}
+.learnMore{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+.secTwo{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInSecTwo{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+.secTwo h1{
+    text-align: center;
+}
+.courses{
+    padding: 50px 50px 0px 100px ;
+}
+.courses div{
+    padding: 10px 50px 0px 50px;
+}
+.secTwo .link{
+    text-align:center ;
+    padding-top: 40px;
+}
+
+.vettingProcess ol{
+    list-style-type: none;
+    counter-reset: item;
+}
+.vettingProcess li{
+    position: relative;
+    counter-increment: item;
+}
+.vettingProcess li:before{
+    content: counter(item);
+     font-size: 12px;
+     font-weight: bold;
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     border: 1px solid black;
+     display: inline-block;
+     text-align: center;
+     margin-right: 5px;
+     padding: 5px;
+}
+
+.secThree{
+    padding: 150px 40px 0px 40px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForSecThree{
+    opacity: 1;
+    transform: translateX(0);
+}
+.vettingProcess{
+    padding-top: 80px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+.orderedList{
+    padding: 0px 50px 0px 45px;
+}
+.orderedList p{
+    padding-left:45px;
+}
+article{
+    margin-top: 150px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForArtCont{
+    opacity: 1;
+    transform: translateX(0);
+  }
+.techies p img{
+    width: 100%;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.techies .cont{
+    padding: 30px;
+}
+.articleTwo img{
+    width: 100%;
+    height: 500px;
+}
+.articleTwo div {
+    padding: 100px 0px 0px 70px;
+}
+.articleThree select{
+    width: 100%;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.peopleStanding{
+    position: relative;
+}
+.dots{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForFooter{
+    opacity: 1;
+    transform: translateX(0);
+}
+footer img{
+    width:150px;
+    height: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:992px){
+    .navbar-brand img{
+        width:150px;
+        height: 30px;
+    }
+    .left{
+      padding: 10px 0px 20px 50px;
+    }
+    .talents{
+        padding: 0px 15px 0px 15px;
+    }
+    .one{
+        position: absolute;
+        top: 40px;
+        left: 60px;
+    }
+    .two{
+        position: absolute;
+        top: 80px;
+        left: 420px;
+        /* transform: translate(-50%, -50%); */
+    }
+    .three{
+        position: absolute;
+        top: 170px;
+        right: 100px;
+    }
+    .four{
+        position: absolute;
+        top: 265px;
+        right: 110px;
+    }
+    .five{
+        position: absolute;
+        bottom: 120px;
+        right:180px;
+    }
+    .secimg{
+        padding-left: 50px;
+    }
+    .secimg img{
+        width: 100%;
+    }
+    .secOneCont{
+        padding: 60px 100px 100px 30px;
+    }
+    .secThree{
+        padding: 100px 0px 0px 0px;
+    }
+    .vettingProcess{
+        padding-top: 50px;
+    }
+    .orderedList{
+        padding: 0px 10px 0px 5px;
+    }
+    .techies h3{
+        font-size: 20px;
+    }
+    .articleTwo img{
+        width: 100%;
+        height: 300px;
+    }
+    .articleTwo div{
+        padding-top: 15px;
+    }
+    .articleTwo h1{
+        font-size: 25px;
+    }
+    .dots{
+        display: none;
+    }
+    footer div{
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container-fluid{
+        padding-left: 30px;
+    }
+    .courses div{
+        padding: 10px 0px 0px 0px;
+    }
+    .courses{
+        padding: 30px 50px 0px 30px ;
+    }
+    .secOneCont{
+        padding: 5px 0px 50px 30px;
+    }
+    .articleTwo div {
+        padding-left: 10px;
+    }
+    .dots{
+        display: none;
+    }
+    .skills span{
+        font-size: 8px;
+    }
+    .two{
+        /* top: 70px; */
+        left: 400px;
+        /* transform: translate(-50%, -50%); */
+    }
+}

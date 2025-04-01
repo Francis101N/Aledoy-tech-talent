@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    display: flex;
+    background-color: #e1e1e1;
+    overflow-y: hidden;
+}
+main{
+    flex: 60%;
+    text-align: center;
+    animation: fadeIn 2.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.main{
+    padding: 10% 20% 0px 20%;
+}
+.logo{
+    width:50%;
+}
+.form{
+    flex: 40%;
+    padding: 5% 10% 20% 5%;
+    background-color: white;
+    height: 1000px;
+}
+form{
+    animation: slideIn 2s ease-in-out;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 1s ease-out;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+input[type="email"] {
+    width: 100%; 
+    height: 40px; 
+    border: none;
+}
+input[type="password"] {
+    width: 100%; 
+    height: 40px; 
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.email{
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+}
+.password{
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+}
+.fa-solid{
+    color:#e1e1e1;
+    padding: 12px 10px 0px 10px;
+}
+.forgetPass{
+    text-align: end;
+}
+.forgetPass a{
+    text-decoration: none;
+    color: black;
+}
+.login{
+    text-align: center;
+    border-radius: 10px;
+}
+input[type="submit"] {
+    color: white;
+    width: 100%; 
+    height: 40px; 
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+}
+.google{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.google a{
+    text-decoration: none;
+    color: black;
+}
+.signUp{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.signUp a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:992px){
+    main{
+        flex: 50%; 
+    }
+    .main{
+        padding: 30% 15% 0px 20%;
+    }
+    .form{
+        flex: 50%;
+        padding: 10% 10% 10% 5%;
+    }
+    .logo{
+        width:40%;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .main{
+        padding: 20% 5% 20% 5%;
+    }
+    .logo{
+        width:30%;
+    }
+}

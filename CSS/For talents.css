@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+ul{
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+.container-fluid{
+    padding-left: 80px;
+}
+.navbar-brand img{
+    width:150px;
+    height: 50px;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+.login{
+    border: 1px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px black;
+}
+main{
+    background-color: #f0f0f0;
+    padding: 100px 0px 50px 100px;
+}
+.main{
+    animation: slideIn 2s ease-in-out;
+}
+@keyframes slideIn {
+   from {
+       opacity: 0;
+       transform: translateX(-100%);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+main h1{
+    font-size: 50px;
+}
+.mainTwo{
+    background-color: white;
+    padding: 100px 0px 50px 100px;
+    animation: slideIn 3s ease-in-out;
+}
+@keyframes slideIn {
+   from {
+       opacity: 0;
+       transform: translateX(-100%);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+.btn{
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0,0,0, 0.5);
+}
+.talents{
+    background-color: crimson;
+    color: white;
+    padding: 1px 20px 1px 20px;
+}
+.right{
+    padding: 40px 80px 0px 50px;
+}
+.link{
+    margin-top: 150px
+}
+.secOne{
+    background-color: #f0f0f0;
+    padding: 60px 80px 40px 80px;
+}
+.contOne{
+    padding-top: 150px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+}
+.slideInForContOne{
+    opacity: 1;
+    transform: translateX(0);
+}
+.contTwo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForContTwo{
+    opacity: 1;
+    transform: translateX(0);
+}
+.contTwo div{
+    background-color: white;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.two{
+    position: relative;
+    top: 30px;
+}
+.four{
+    position: relative;
+    top: 30px;
+}
+.secTwo{
+    padding-top: 80px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForSecTwo{
+    opacity: 1;
+    transform: translateX(0);
+}
+.secTwoCont{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 10px 100px 10px 100px;
+}
+.secTwoCont div{
+   text-align: left;
+   border: 3px solid black;
+   border-radius: 10px;
+   margin: 40px;
+   padding: 30px 100px 20px 30px;
+}
+.secTwoCont span{
+    color: red;
+    font-weight: bolder;
+}
+.stFour{
+    position: relative;
+    left: 50px;
+}
+.stFive{
+    position: relative;
+    left: 50px;
+}
+.stSix{
+    position: relative;
+    left: 50px;
+}
+.secThree{
+    padding: 100px 0px 100px 0px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForSecThree{
+    opacity: 1;
+    transform: translateX(0);
+}
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .checklist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .check-icon {
+    background-color: #e52936;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .check-text {
+    font-size: 16px;
+    color: black;
+  }
+  .secFour{
+    border: 3px solid black;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForSecFour{
+    opacity: 1;
+    transform: translateX(0);
+}
+  footer div{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForFooter{
+    opacity: 1;
+    transform: translateX(0);
+}
+footer img{
+    width:150px;
+    height: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:992px){
+    main{
+        padding: 80px 0px 50px 60px;
+    }
+    .mainTwo{
+        padding: 40px 0px 0px 30px;
+    }
+    .left{
+        padding-right: 20px;
+    }
+    .link{
+        margin-top:30px
+    }
+    .right{
+        padding: 10px 40px 0px 40px;
+    }
+    .secOne{
+        padding: 60px 10px 40px 25px;
+    }
+    .contOne{
+        padding-right: 20px;
+    }
+    .contTwo div{
+        font-size: 15px;
+        padding: 15px;
+        margin: 10px;
+    }
+    .secTwoCont{
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+    }
+    .secTwoCont div{
+       margin: 15px;
+       padding: 20px 50px 15px 10px;
+    }
+    .stFour{
+        position: relative;
+        left:0px;
+    }
+    .stFive{
+        position: relative;
+        left:0px;
+    }
+    .stSix{
+        position: relative;
+        left:0px;
+    }
+    footer div{
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width:600px){
+    main{
+        padding: 50px 0px 50px 40px;
+    }
+    .mainTwo{
+        padding: 50px 20px 50px 20px;
+    }
+    .left{
+        padding-right: 0px;
+    }
+    .right{
+        padding: 20px 40px 0px 10px;
+    }
+    .secOne{
+        padding-top: 5px;
+    }
+    .contOne{
+        padding-top: 30px;
+    }
+    .contTwo{
+        grid-template-columns: 100%;
+    }
+    .secTwoCont{
+        grid-template-columns: 100%;
+        padding: 5px;
+    }
+    .secTwoCont div{
+        margin: 20px;
+        padding: 20px 50px 15px 10px;
+     }
+     .stFour{
+        position: relative;
+        left: 0px;
+    }
+    .stFive{
+        position: relative;
+        left: 0px;
+    }
+    .stSix{
+        position: relative;
+        left: 0px;
+    }
+}

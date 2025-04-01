@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+ul{
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+.container-fluid{
+    padding-left: 80px;
+}
+.navbar-brand img{
+    width:150px;
+    height: 50px;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+.login{
+    border: 1px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px black;
+}
+main{
+    background-color: #f0f0f0;
+    padding: 100px 0px 50px 100px;
+}
+.main{
+    animation: slideIn 2s ease-in-out;
+}
+@keyframes slideIn {
+   from {
+       opacity: 0;
+       transform: translateX(-100%);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+main h1{
+    font-size: 50px;
+}
+.mainTwo{
+    background-color: white;
+    padding: 100px 0px 50px 100px;
+    animation: slideIn 3s ease-in-out;
+}
+@keyframes slideIn {
+   from {
+       opacity: 0;
+       transform: translateX(-100%);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+.btn{
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0,0,0, 0.5);
+}
+.talents{
+    background-color: crimson;
+    color: white;
+    padding: 1px 20px 1px 20px;
+}
+.right{
+    padding: 40px 150px 0px 70px;
+}
+.link{
+    margin-top: 150px
+}
+.secOne{
+    padding-top: 80px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForSecOne{
+    opacity: 1;
+    transform: translateX(0);
+}
+.secOneCont{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 10px 100px 10px 100px;
+}
+.secOneCont div{
+   text-align: left;
+   border: 3px solid black;
+   border-radius: 10px;
+   margin: 40px;
+   padding: 30px 100px 30px 30px;
+}
+.secOneCont span{
+    color: red;
+    font-weight: bolder;
+}
+.stTwo{
+    position: relative;
+    top: 300px;
+}
+.secTwo{
+    border: 3px solid black;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+    margin-top: 600px;
+}
+.slideInForSecTwo{
+    opacity: 1;
+    transform: translateX(0);
+}
+footer div{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForFooter{
+    opacity: 1;
+    transform: translateX(0);
+}
+footer img{
+    width:150px;
+    height: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:992px){
+    main{
+        padding: 80px 0px 50px 60px;
+    }
+    .mainTwo{
+        padding: 40px 0px 0px 30px;
+    }
+    .left{
+        padding-right: 20px;
+    }
+    .link{
+        margin-top:30px
+    }
+    .right{
+        padding: 10px 40px 0px 40px;
+    }
+    .secOne{
+        padding: 60px 10px 40px 25px;
+    }
+    .secOneCont{
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+    }
+    .secOneCont div{
+       margin: 15px;
+       padding: 20px 50px 15px 10px;
+    }
+    .stTwo{
+        position: relative;
+        top:0px;
+    }
+    .secTwo{
+        margin-top: 100px;
+    }
+    footer div{
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:600px){
+    main{
+        padding: 40px 0px 50px 30px;
+    }
+    .mainTwo{
+        padding: 50px 20px 50px 20px;
+    }
+    .left{
+        padding-right: 0px;
+    }
+    .right{
+        padding: 20px 40px 0px 10px;
+    }
+    .secOneCont{
+        grid-template-columns: 100%;
+    }
+    .secOneCont div{
+        margin: 10px;
+        padding: 20px 50px 15px 10px;
+     }
+
+}
