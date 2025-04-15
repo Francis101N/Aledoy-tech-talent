@@ -21,6 +21,11 @@ ul a{
 .nav-link{
     color: black;
     font-weight: bold;
+    margin-right: 40px;
+}
+.nav-link:hover{
+    color: black;
+    border-bottom: 2px solid #dc3545;
 }
 .login{
     border: 1px solid black;
@@ -28,9 +33,14 @@ ul a{
     border-radius: 10px;
     box-shadow: 5px 5px 0px black;
 }
+.login:hover{
+    background-color: #dc3545;
+    color: white;
+}
 main{
     background-color: #f0f0f0;
     padding: 100px 0px 50px 100px;
+    margin-top: 10px;
 }
 .main{
     animation: slideIn 2s ease-in-out;
@@ -275,6 +285,9 @@ footer a{
     }
 }
 @media screen and (max-width:600px){
+    .container-fluid{
+        padding-left: 30px;
+    }
     main{
         padding: 50px 0px 50px 40px;
     }

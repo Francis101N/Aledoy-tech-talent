@@ -21,15 +21,27 @@ ul a{
 .nav-link{
     color: black;
     font-weight: bold;
+    margin-right: 40px;
+}
+.nav-link:hover{
+    color: black;
+    border-bottom: 2px solid #dc3545;
 }
 .login{
     border: 1px solid black;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 0px rgba(0,0,0, 0.5);
+    font-weight: bold;
+}
+.login:hover{
+    background-color: #dc3545;
+    color: white;
 }
 .mainOne{
     background-color: #f0f0f0;
+    padding-top: 50px;
+    margin-top: 10px;
 }
 main h1{
     font-size: 50px;
@@ -61,7 +73,7 @@ main h1{
 .skills .fa-solid{
     color: green;
     font-size: 15px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     border-radius: 30px;
     margin-right: 5px;
 }
@@ -84,29 +96,29 @@ main h1{
 }
 .one{
     position: absolute;
-    top: 40px;
-    left: 100px;
+    top: 5%;
+    left: 15%;
 }
 .two{
     position: absolute;
-    top: 70px;
-    left: 480px;
+    top: 15%;
+    right: 8%;
     /* transform: translate(-50%, -50%); */
 }
 .three{
     position: absolute;
-    top: 190px;
-    right: 20px;
+    top: 33%;
+    right: 1%;
 }
 .four{
     position: absolute;
-    top: 310px;
-    right: 18px;
+    top: 53%;
+    right: 1%;
 }
 .five{
     position: absolute;
-    bottom: 140px;
-    right:80px;
+    bottom: 20%;
+    right:20%;
 }
 .talents{
     background-color: crimson;
@@ -245,7 +257,7 @@ article{
 }
 .dots{
     position: absolute;
-    top: 0;
+    top: 0%;
     width: 100%;
     height: auto;
     display: flex;
@@ -281,29 +293,29 @@ footer a{
     }
     .one{
         position: absolute;
-        top: 40px;
-        left: 60px;
+        top: 5%;
+        left: 15%;
     }
     .two{
         position: absolute;
-        top: 80px;
-        left: 420px;
+        top: 15%;
+        right: 8%;
         /* transform: translate(-50%, -50%); */
     }
     .three{
         position: absolute;
-        top: 170px;
-        right: 100px;
+        top: 33%;
+        right: 1%;
     }
     .four{
         position: absolute;
-        top: 265px;
-        right: 110px;
+        top: 53%;
+        right: 1%;
     }
     .five{
         position: absolute;
-        bottom: 120px;
-        right:180px;
+        bottom: 20%;
+        right:20%;
     }
     .secimg{
         padding-left: 50px;
@@ -336,6 +348,9 @@ footer a{
     .articleTwo h1{
         font-size: 25px;
     }
+    .peopleStanding img{
+        width: 100%;
+    }
     .dots{
         display: none;
     }
@@ -347,6 +362,9 @@ footer a{
 @media screen and (max-width:600px){
     .container-fluid{
         padding-left: 30px;
+    }
+    .mainOne{
+        padding-top: 8px;
     }
     .courses div{
         padding: 10px 0px 0px 0px;
@@ -366,9 +384,33 @@ footer a{
     .skills span{
         font-size: 8px;
     }
+    .one{
+        position: absolute;
+        top: 5%;
+        left: 15%;
+    }
     .two{
-        /* top: 70px; */
-        left: 400px;
+        position: absolute;
+        top: 15%;
+        right: 8%;
         /* transform: translate(-50%, -50%); */
+    }
+    .three{
+        position: absolute;
+        top: 33%;
+        right: 1%;
+    }
+    .four{
+        position: absolute;
+        top: 53%;
+        right: 1%;
+    }
+    .five{
+        position: absolute;
+        bottom: 20%;
+        right:25%;
+    }
+    .peopleStanding img{
+        width: 100%;
     }
 }
